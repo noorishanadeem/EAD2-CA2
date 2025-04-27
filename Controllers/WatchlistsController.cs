@@ -19,13 +19,13 @@ namespace MovieAppAPI.Controllers
         [HttpGet("{user}")]
         public ActionResult<IEnumerable<Movie>> GetWatchlist(string user)
         {
-            // Get all movieIds for the user
+            // getting all movieIds for the user
             var movieIds = _context.Watchlists
                 .Where(w => w.User == user)
                 .Select(w => w.MovieId)
                 .ToList();
 
-            // Get full movie details for those movieIds
+            // geting full movie details for those movieIds
             var movies = _context.Movies
                 .Where(m => movieIds.Contains(m.Id))
                 .ToList();
@@ -33,6 +33,7 @@ namespace MovieAppAPI.Controllers
             return movies;
         }
 
+        // adding to watchlist
         [HttpPost]
         public ActionResult<Watchlist> AddToWatchlist(Watchlist watchlist)
         {
@@ -40,6 +41,8 @@ namespace MovieAppAPI.Controllers
             _context.SaveChanges();
             return CreatedAtAction(nameof(GetWatchlist), new { user = watchlist.User }, watchlist);
         }
+
+        // removing from watchlist
         [HttpDelete("{user}/{movieId}")]
         public async Task<IActionResult> RemoveFromWatchlist(string user, int movieId)
         {

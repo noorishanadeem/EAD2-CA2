@@ -15,12 +15,15 @@ namespace MovieAppAPI.Controllers
             _context = context;
         }
 
+
+        // get movies
         [HttpGet]
         public ActionResult<IEnumerable<Movie>> GetMovies()
         {
             return _context.Movies.ToList();
         }
 
+        //adding movies
         [HttpPost]
         public ActionResult<Movie> AddMovie(Movie movie)
         {

@@ -16,7 +16,7 @@ namespace MovieAppAPI.Controllers
             _context = context;
         }
 
-        // Get all reviews for a specific movie
+        // gets all reviews for 1 specific movie
         [HttpGet("movie/{movieId}")]
         public ActionResult<IEnumerable<Review>> GetReviewsForMovie(int movieId)
         {
@@ -24,7 +24,7 @@ namespace MovieAppAPI.Controllers
             return reviews;
         }
 
-        // Add a new review
+        // adding a new review
         [HttpPost]
         public ActionResult<Review> AddReview(Review review)
         {
@@ -33,7 +33,7 @@ namespace MovieAppAPI.Controllers
             return CreatedAtAction(nameof(GetReviewsForMovie), new { movieId = review.MovieId }, review);
         }
 
-        // Update (edit) a review
+        // updating/ editing a review
         [HttpPut("{id}")]
         public IActionResult UpdateReview(int id, Review updatedReview)
         {
@@ -53,7 +53,7 @@ namespace MovieAppAPI.Controllers
             return NoContent();
         }
 
-        // Delete a review
+        // deleting a review
         [HttpDelete("{id}")]
         public IActionResult DeleteReview(int id)
         {
