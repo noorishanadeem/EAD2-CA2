@@ -12,8 +12,8 @@ using MovieAppAPI.Data;
 namespace MovieAppAPI.Migrations
 {
     [DbContext(typeof(MovieContext))]
-    [Migration("20250427155528_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250427190444_UpdateReviewRatingToDouble")]
+    partial class UpdateReviewRatingToDouble
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -86,8 +86,8 @@ namespace MovieAppAPI.Migrations
                     b.Property<int>("MovieId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Rating")
-                        .HasColumnType("int");
+                    b.Property<double>("Rating")
+                        .HasColumnType("float");
 
                     b.Property<string>("User")
                         .IsRequired()

@@ -1,0 +1,221 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|c:\\users\\1saya\\source\\repos\\ead2-ca2\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|c:\\users\\1saya\\source\\repos\\ead2-ca2\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|c:\\users\\1saya\\source\\repos\\ead2-ca2\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|solutionrelative:models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|c:\\users\\1saya\\source\\repos\\ead2-ca2\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|solutionrelative:controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|c:\\users\\1saya\\source\\repos\\ead2-ca2\\migrations\\20250427190444_updatereviewratingtodouble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|solutionrelative:migrations\\20250427190444_updatereviewratingtodouble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|c:\\users\\1saya\\source\\repos\\ead2-ca2\\models\\watchlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|solutionrelative:models\\watchlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|c:\\users\\1saya\\source\\repos\\ead2-ca2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|c:\\users\\1saya\\source\\repos\\ead2-ca2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|c:\\users\\1saya\\source\\repos\\ead2-ca2\\data\\moviecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|solutionrelative:data\\moviecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|c:\\users\\1saya\\source\\repos\\ead2-ca2\\controllers\\watchlistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|solutionrelative:controllers\\watchlistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|c:\\users\\1saya\\source\\repos\\ead2-ca2\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|solutionrelative:controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|c:\\users\\1saya\\source\\repos\\ead2-ca2\\migrations\\20250427184259_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C82E6966-D9ED-EA01-F153-C754FC303A01}|MovieAppAPI.csproj|solutionrelative:migrations\\20250427184259_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\.gitignore*",
+              "RelativeToolTip": ".gitignore*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-27T19:19:31.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250427190444_UpdateReviewRatingToDouble.cs",
+              "DocumentMoniker": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Migrations\\20250427190444_UpdateReviewRatingToDouble.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250427190444_UpdateReviewRatingToDouble.cs",
+              "ToolTip": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Migrations\\20250427190444_UpdateReviewRatingToDouble.cs",
+              "RelativeToolTip": "Migrations\\20250427190444_UpdateReviewRatingToDouble.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T19:04:45.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "Models\\Review.cs",
+              "ToolTip": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Models\\Review.cs",
+              "RelativeToolTip": "Models\\Review.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:55:47.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReviewsController.cs",
+              "ToolTip": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA2wCcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:39:50.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-27T18:37:58.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WatchlistsController.cs",
+              "DocumentMoniker": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Controllers\\WatchlistsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WatchlistsController.cs",
+              "ToolTip": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Controllers\\WatchlistsController.cs",
+              "RelativeToolTip": "Controllers\\WatchlistsController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:55:00.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MoviesController.cs",
+              "DocumentMoniker": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Controllers\\MoviesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MoviesController.cs",
+              "ToolTip": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Controllers\\MoviesController.cs",
+              "RelativeToolTip": "Controllers\\MoviesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:56:07.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Watchlist.cs",
+              "DocumentMoniker": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Models\\Watchlist.cs",
+              "RelativeDocumentMoniker": "Models\\Watchlist.cs",
+              "ToolTip": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Models\\Watchlist.cs",
+              "RelativeToolTip": "Models\\Watchlist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:55:56.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "Models\\Movie.cs",
+              "ToolTip": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Models\\Movie.cs",
+              "RelativeToolTip": "Models\\Movie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:36:39.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MovieContext.cs",
+              "DocumentMoniker": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Data\\MovieContext.cs",
+              "RelativeDocumentMoniker": "Data\\MovieContext.cs",
+              "ToolTip": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Data\\MovieContext.cs",
+              "RelativeToolTip": "Data\\MovieContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:56:45.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:57:11.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250427184259_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Migrations\\20250427184259_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250427184259_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\1saya\\source\\repos\\EAD2-CA2\\Migrations\\20250427184259_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20250427184259_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T18:43:00.318Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -47,26 +47,6 @@
   },
   {
     "ContainingType": "MovieAppAPI.Controllers.ReviewsController",
-    "Method": "GetReviews",
-    "RelativePath": "api/Reviews",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[MovieAppAPI.Models.Review, MovieAppAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "MovieAppAPI.Controllers.ReviewsController",
     "Method": "AddReview",
     "RelativePath": "api/Reviews",
     "HttpMethod": "POST",
@@ -155,32 +135,6 @@
     ]
   },
   {
-    "ContainingType": "MovieAppAPI.Controllers.ReviewsController",
-    "Method": "GetAverageRating",
-    "RelativePath": "api/Reviews/movie/{movieId}/average",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "movieId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Double",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "MovieAppAPI.Controllers.WatchlistsController",
     "Method": "AddToWatchlist",
     "RelativePath": "api/Watchlists",
@@ -231,5 +185,26 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "MovieAppAPI.Controllers.WatchlistsController",
+    "Method": "RemoveFromWatchlist",
+    "RelativePath": "api/Watchlists/{user}/{movieId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "movieId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

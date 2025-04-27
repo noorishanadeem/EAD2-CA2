@@ -40,5 +40,18 @@ namespace MovieAppAPI.Controllers
             _context.SaveChanges();
             return CreatedAtAction(nameof(GetWatchlist), new { user = watchlist.User }, watchlist);
         }
+        [HttpDelete("{user}/{movieId}")]
+        public async Task<IActionResult> RemoveFromWatchlist(string user, int movieId)
+        {
+            var item = await _context.Watchlists
+                .FirstOrDefaultAsync(w => w.User == user && w.MovieId == movieId);
+            if (item == null)
+                return NotFound();
+
+            _context.Watchlists.Remove(item);
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
     }
 }
