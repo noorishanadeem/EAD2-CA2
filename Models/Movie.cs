@@ -32,5 +32,7 @@ namespace MovieAppAPI.Models
 
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
+        public string PosterUrl { get; set; } = string.Empty;
+
     }
 }
