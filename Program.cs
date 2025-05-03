@@ -18,7 +18,7 @@ namespace MovieAppAPI
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddDbContext<MovieContext>(options =>
-    options.UseSqlServer("Server=tcp:movieappserver1234.database.windows.net,1433;Initial Catalog=MovieAppDb;Persist Security Info=False;User ID=adminuser;Password=MovieAppDB_2025;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
             var app = builder.Build();

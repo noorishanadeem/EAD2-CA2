@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MovieAppAPI.Models;
+using MovieAppAPI.Data;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace MovieAppAPI.Controllers
 {
@@ -8,72 +12,73 @@ namespace MovieAppAPI.Controllers
     [Route("api/[controller]")]
     public class MoviesController : ControllerBase
     {
-        // This will act like a fake database for now
-        private static List<Movie> movies = new List<Movie>();
+        private readonly MovieContext _context;
+
+        public MoviesController(MovieContext context)
+        {
+            _context = context;
+        }
 
         // GET: api/movies
         [HttpGet]
-        public ActionResult<IEnumerable<Movie>> GetMovies()
+        public async Task<ActionResult<IEnumerable<Movie>>> GetMovies()
         {
-            return Ok(movies);
+            return await _context.Movies.ToListAsync();
         }
 
         // GET: api/movies/{id}
         [HttpGet("{id}")]
-        public ActionResult<Movie> GetMovie(int id)
+        public async Task<ActionResult<Movie>> GetMovie(int id)
         {
-            var movie = movies.Find(m => m.Id == id);
+            var movie = await _context.Movies.FindAsync(id);
             if (movie == null)
-            {
                 return NotFound();
-            }
-            return Ok(movie);
+            return movie;
         }
 
         // POST: api/movies
         [HttpPost]
-        public ActionResult<Movie> CreateMovie([FromBody] Movie movie)
+        public async Task<ActionResult<Movie>> CreateMovie([FromBody] Movie movie)
         {
-            movie.Id = movies.Count + 1; // Simple ID assignment
-            movies.Add(movie);
+            _context.Movies.Add(movie);
+            await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetMovie), new { id = movie.Id }, movie);
         }
 
         // PUT: api/movies/{id}
         [HttpPut("{id}")]
-        public ActionResult UpdateMovie(int id, [FromBody] Movie updatedMovie)
+        public async Task<IActionResult> UpdateMovie(int id, [FromBody] Movie updatedMovie)
         {
-            var movie = movies.Find(m => m.Id == id);
-            if (movie == null)
-            {
-                return NotFound();
-            }
+            if (id != updatedMovie.Id)
+                return BadRequest();
 
-            // Update properties
-            movie.Title = updatedMovie.Title;
-            movie.Description = updatedMovie.Description;
-            movie.Genre = updatedMovie.Genre;
-            movie.Director = updatedMovie.Director;
-            movie.Producer = updatedMovie.Producer;
-            movie.Rating = updatedMovie.Rating;
-            movie.PgRating = updatedMovie.PgRating;
-            movie.Length = updatedMovie.Length;
-            movie.ReleaseDate = updatedMovie.ReleaseDate;
+            _context.Entry(updatedMovie).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Movies.Any(m => m.Id == id))
+                    return NotFound();
+                else
+                    throw;
+            }
 
             return NoContent();
         }
 
         // DELETE: api/movies/{id}
         [HttpDelete("{id}")]
-        public ActionResult DeleteMovie(int id)
+        public async Task<IActionResult> DeleteMovie(int id)
         {
-            var movie = movies.Find(m => m.Id == id);
+            var movie = await _context.Movies.FindAsync(id);
             if (movie == null)
-            {
                 return NotFound();
-            }
 
-            movies.Remove(movie);
+            _context.Movies.Remove(movie);
+            await _context.SaveChangesAsync();
             return NoContent();
         }
     }

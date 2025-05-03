@@ -17,21 +17,33 @@ namespace MovieAppAPI.Controllers
         }
 
         [HttpGet("{user}")]
-        public ActionResult<IEnumerable<Movie>> GetWatchlist(string user)
+        public async Task<ActionResult<IEnumerable<Movie>>> GetWatchlist(string user)
         {
-            // getting all movieIds for the user
-            var movieIds = _context.Watchlists
-                .Where(w => w.User == user)
-                .Select(w => w.MovieId)
-                .ToList();
+            if (string.IsNullOrWhiteSpace(user))
+                return BadRequest("User cannot be null or empty.");
 
-            // geting full movie details for those movieIds
-            var movies = _context.Movies
-                .Where(m => movieIds.Contains(m.Id))
-                .ToList();
+            try
+            {
+                var movieIds = await _context.Watchlists
+                    .Where(w => w.User == user)
+                    .Select(w => w.MovieId)
+                    .ToListAsync();
 
-            return movies;
+                if (movieIds == null || !movieIds.Any())
+                    return NotFound("No watchlist found for user '{user}'.");
+
+                var movies = await _context.Movies
+                    .Where(m => movieIds.Contains(m.Id))
+                    .ToListAsync();
+
+                return Ok(movies);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error: {ex.Message}");
+            }
         }
+
 
         // adding to watchlist
         [HttpPost]
